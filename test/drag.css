@@ -1,0 +1,4 @@
+div, span {
+  -webkit-user-select: auto !important;
+  user-select: auto !important;
+}
