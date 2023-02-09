@@ -1,3 +1,4 @@
+var doc = document;
 var body = doc.body;
 var html = doc.documentElement;
 
