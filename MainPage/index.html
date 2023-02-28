@@ -1,0 +1,156 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset = "utf-8">
+  <title>DM</title>
+  <script src='/main.js'></script>
+  <link href="/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body style='background-color:#111316; color:white'>
+   <!-- banner -->
+   <div>
+     <div style='width:100%; position: fixed;' class='banner'>
+       <!-- lang btn -->
+      <div class='toggleBr'></div>
+      <label>
+  <input id='ko' role="switch" type="checkbox" onClick='inp()'/>
+  <span style='font-size:1em'>한국어(Kor)</span>
+</label>
+     </div>
+   </div>
+   <!-- introduce section(code part) -->
+   <div>
+    <div class='end-br'></div>
+    <div class="main_image">
+      <div width="23%", class='codebox'>
+      <span class="main_image_text" style="font-size:10px">  
+       <span id='text' class='csize'>
+       <span style='color:#FF5E00' id='def'class='codesize'></span>
+      <span style='color:#E6B2FF'id='funn'class='codesize'></span>
+      <span id='na'class='codesize'></span> <span style='color:#79c0ff'id='ne'class='codesize'></span>
+      <span style='color:#a5d6ff'id='name'class='codesize'></span>
+      <span id='aa'class='codesize'></span>
+      <span style='color:#79c0ff'id='ae'class='codesize'></span>
+      <span style='color:#a5d6ff'id='age'class='codesize'></span>
+      <span id='ea'class='codesize'></span>
+      <span style='color:#79c0ff'id='en'class='codesize'></span>
+      <span style='color:#a5d6ff'id='email' class='codesize'></span>
+      </span>
+</span>
+  </div>
+</div>
+   </div>
+   <center>
+     <!-- about section -->
+     <center>
+       <div class='cbr'></div>
+       <div class='card'>
+       <div class='banner_size'>About</div>
+       <div id='about' class='t_size'></div><br>
+     </center>
+     <!-- project section -->
+     <div>
+     <div class='sbr'></div>
+      <div class='left'>Github Project</div>
+      <div class='tl' id='gitab'></div>
+      <div class='btn-br'></div>
+     <div class='card'>
+       <br>
+       <div class='t_size'>
+         <div class='btn-br'></div>
+         <div style='background-color:#212529; width:300px; border-radius: 10px;'>
+           <div class='btn-br'></div>
+           <img src='https://url.kr/tu93i7'></img>
+           <a href='https://github.com/DM-09/PythonCode'>Python Code</a>
+           <div style='color:gray' class='de' id='Py_de'>Things made with Python</div>
+         <span style='background-color:#3572A5;border-radius: 8px; font-size:0.6em'>⠀⠀</span><span style='font-size:0.8em'> Python</span>
+           <div class='btn-br'></div>
+         </div>
+         <div class='btn-br'></div>
+         <div style='background-color:#212529; width:300px; border-radius: 10px;'>
+           <!-- Python -->
+           <div class='btn-br'></div>
+           <!-- tools -->
+           <img src='https://url.kr/tu93i7'></img>
+           <a href='https://github.com/DM-09/tools'>Tools</a>
+           <div style='color:gray' class='de' id='tools_de'>My Useful Web Tools</div>
+         <span style='background-color:#e34c26;border-radius: 8px; font-size:0.6em'>⠀⠀</span><span style='font-size:0.8em'> HTML</span>
+           <div class='btn-br'></div>
+         </div>
+       </div>
+       <br>
+     </div>
+    </div>
+     <div>
+       <div class='btn-br'></div>
+       <button class="btn" type="button" onclick="window.open('https://github.com/DM-09')">Github</button>
+       </div>
+     </div>
+   
+     <!-- BeakJoon -->
+     <div>
+     <div class='br'></div>
+       <div class='left'>BeakJoon</div>
+       <div class='tl' id='beab'></div>
+       <div class='btn-br'></div>
+     <div class='card'>
+       <br>
+       <!-- Card -->
+       <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dongmin" alt="" data-canonical-src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dongmin" style="max-width: 85%;"><br><br>
+         <!-- txt -->
+         <div id='SolvedCount' class='t_size'></div>
+         <div id='solvedStreak' class='t_size'></div>
+         <div id='solvedTier' class='t_size'></div>
+         <br><a href='https://github.com/DM-09/BeakJoonCode' id='gitre' style='color:#8C8C8C;'></a>
+       <!-- btn -->
+       <div>
+       <br><button class="btn" type="button" style='width:48%'onclick="window.open('https://www.acmicpc.net/user/dongmin')">BeakJoon</button>
+       <button class="btn" type="button" style='width:48%'onclick="window.open('https://solved.ac/profile/dongmin')">Solved.ac</button>
+         <div class='btn-br'></div>
+      </div>
+     </div>
+    </div>
+     <!-- Skill -->
+     <div>
+     <div class='br'></div>
+       <div class='left'>Skills</div>
+       <div class='btn-br'></div>
+       <div class='card'>
+         <br>
+         <!-- badge -->
+         <div>
+          <button type="button" class='sbtn' onClick='Skill("Python")'>Python</button>
+           
+          <button type="button" class='sbtn' onClick='Skill("Lua")'>Lua</button>
+           
+          <button type="button" class='sbtn' onClick='Skill("Web")'>Web</button>
+
+           </div>
+         <!-- de label -->
+         <div class='btn-br'></div>
+         <span id='Skill' class='skill'></span>
+         <span id='de_label' class='DeLabel'></span>
+         <div class='btn-br'></div>
+       </div>
+    </div>
+     <!-- end -->
+     <div class='end-br'></div>
+     <div class='end' class='to'>
+       <div class='s'></div>
+       <div class='nt'>@DM-09</div>
+       <div class='btn-br'></div>
+       <!-- Account -->
+       <div>
+       <a href='https://github.com/DM-09'><img src="https://img.shields.io/badge/Github-gray?style=flat&logo=Github&logoColor=white" id='ga'/></a>
+     
+       <a href='mailto:happydm09@naver.com'><img src="https://img.shields.io/badge/Email-gray?style=flat&logo=Gmail&logoColor=white" id='mail'/></a>
+         
+       <img src="https://img.shields.io/badge/<More>-gray?style=flat" onClick='MoreAc()' id='moreAc'/>
+         
+         <span><a href='https://addons.mozilla.org/en-US/firefox/user/17626890/' style="display: none" id='ff'><img src="https://img.shields.io/badge/Firefox-gray?style=flat&logo=Firefox+Browser&logoColor=white" id='fire'/></a></span>
+         <span><img src="https://img.shields.io/badge/Discord-gray?style=flat&logo=Discord&logoColor=white" onClick='CopyDiscordID()' style="display: none" id='dc'/></span>
+       </div>
+     </div>
+   </center>
+ </body>
+</html>
