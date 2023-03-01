@@ -250,7 +250,7 @@ function View() {
     }
   }
   document.body.appendChild(file);
-} 
+}  
 
 //onload
 window.onload = function(){
