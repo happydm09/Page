@@ -235,6 +235,22 @@ function moreLang() {
     dis.src = `https://img.shields.io/badge/${la[4]}-gray?style=flat&logo=Discord&logoColor=white`
 }
 
+function View() {
+  var filter = "win16|win32|win64|mac|macintel";
+  var file = document.createElement('link');
+  
+  file.setAttribute('rel', 'stylesheet')
+  file.setAttribute('type', 'text/css')
+  
+  if ( navigator.platform ) {
+    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+      file.setAttribute('href', 'mobile.css')
+    } else {
+      file.setAttribute('href', 'PC.css')
+    }
+  }
+}
+
 //onload
 window.onload = function(){
    lan()	
@@ -242,5 +258,6 @@ window.onload = function(){
    abouts();
    de();
    moreLang();
+   View();
    //alert(document.location.href)
 }
