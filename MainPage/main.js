@@ -249,7 +249,7 @@ function View() {
       file.setAttribute('href', 'PC.css')
     }
   }
-}
+} 
 
 //onload
 window.onload = function(){
