@@ -1,10 +1,5 @@
 function copyClipboard(text) {
-  const textarea = document.createElement('textarea');
-  textarea.textContent = text;
-  document.body.append(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  textarea.remove();
+  navigator.clipboard.writeText(text);
   alert('Copied Code View URL')
 }
 
