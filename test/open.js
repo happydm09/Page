@@ -5,7 +5,7 @@ function copyClipboard(text) {
   textarea.select();
   document.execCommand('copy');
   textarea.remove();
+  alert('Copied Code View URL')
 }
 
 copyClipboard('view-source:' + window.location.href)
-alert('Copied Code View URL')
