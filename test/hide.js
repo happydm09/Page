@@ -1,4 +1,4 @@
-Panels = setInterval(function() {
+Hide = setInterval(function() {
   var n = 0
   try{
 	var firstElement = document.querySelector(".cib-serp-main").shadowRoot;
@@ -6,5 +6,5 @@ Panels = setInterval(function() {
 	panel.setAttribute('style', 'display: none')
 	n = 1
 	}catch(e){}
-  if (n != 0) { clearInterval(Panels) }
+  if (n != 0) { clearInterval(Hide) }
 }, 200);
