@@ -1,0 +1,9 @@
+.nav-bg { background-color: #E3F2FD; }
+.nav-color { color: black !important; }
+.body { background-color: white; color: black; }
+
+@media (prefers-color-scheme: dark) {
+  .nav-bg { background-color: #212529; }
+  .nav-color { color: white !important; }
+  .body { background-color: black; color: white; }
+}
