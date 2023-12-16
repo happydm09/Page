@@ -1,6 +1,7 @@
 function Data(c){
   var date = c.getAttribute('date')
   var h = c.getAttribute('h')
+  var src = c.getAttribute('src')
   
   var m = [document.querySelector("#m-title"), document.querySelector("#m-content")]
   m[0].innerHTML = `<img src='${src}'></img>${c.getAttribute('title')}`
