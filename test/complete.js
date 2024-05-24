@@ -14,18 +14,18 @@ if(!quest) {
 	let streamId = encodeStreamKey(ApplicationStreamingStore.getCurrentUserActiveStream())
 	let secondsNeeded = quest.config.streamDurationRequirementMinutes * 60
 	let heartbeat = async function() {
-		console.log("Completing quest", quest.config.messages.gameTitle, "-", quest.config.messages.questName)
+		alert("Completing quest", quest.config.messages.gameTitle, "-", quest.config.messages.questName)
 		while(true) {
 			let res = await api.post({url: `/quests/${quest.id}/heartbeat`, body: {stream_key: streamId}})
 			let progress = res.body.stream_progress_seconds
 			
-			console.log(`Quest progress: ${progress}/${secondsNeeded}`)
+			alert(`Quest progress: ${progress}/${secondsNeeded}`)
 			
 			if(progress >= secondsNeeded) break;
 			await sleep(30 * 1000)
 		}
 		
-		console.log("Quest completed!")
+		alert("Quest completed!")
 	}
 	heartbeat()
 }
