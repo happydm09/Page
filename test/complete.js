@@ -9,7 +9,7 @@ let sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 let quest = [...QuestsStore.quests.values()].find(x => x.userStatus?.enrolledAt && !x.userStatus?.completedAt)
 if(!quest) {
-	console.log("You don't have any uncompleted quests!")
+	alert("You don't have any uncompleted quests!")
 } else {
 	let streamId = encodeStreamKey(ApplicationStreamingStore.getCurrentUserActiveStream())
 	let secondsNeeded = quest.config.streamDurationRequirementMinutes * 60
